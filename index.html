@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+
+<p class="info">变异后路径为</p>
+<span id="createPath"></span><br>
+<button onclick="changePath()">修改编译路径</button>
+<input type="button" value="编译" onclick="pop()" class="compileBtn">
+
+<script type="text/html" class="templates-html">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+        <meta HTTP-EQUIV="Expires" CONTENT="0">
+        <title>[[title]]</title>
+        [[<]]script>
+        (function(){
+        var timer = null;
+
+        function resize() {
+        clearTimeout(timer);
+        timer = setTimeout(_resize, 300);
+        }
+
+        function _resize() {
+        var screen_width = document.documentElement.clientWidth,
+        screen_height = window.innerHeight,
+        psdWidth;
+        psdWidth = screen_width > screen_height ? 1334 : 750;
+        document.documentElement.style.fontSize = screen_width / psdWidth * 100 + 'px';
+        }
+        _resize();
+        window.addEventListener('orientationchange', resize, false);
+        })()
+        [[<]]/script>
+    </head>
+    <body>
+    <div id="app"></div>
+    [[html]]
+    </body>
+    </html>
+</script>
+<script type="text/javascript" src="./js/CSInterface.js"></script>
+<script type="text/javascript" src="./js/Vulcan.js"></script>
+<script type="text/javascript" src="./js/AgoraLib.js"></script>
+<script type="text/javascript" src="./js/test.js"></script>
+</body>
+</html>

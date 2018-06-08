@@ -1,0 +1,35 @@
+//--no-cache --update --sourcemap --watch --style compact $:$.css
+/*scss方法*/
+@function rpx($size) {
+    $tempSize: $size/100;
+    @if ($size==0){
+        @return $size;
+    }
+    @if (unit($tempSize)=='') {
+        @return $tempSize*1rem;
+    } @else if (unit($tempSize)=='px') {
+        @return $tempSize/1px*1rem;
+    } @else {
+        @return $size;
+    }
+}
+@mixin center($w,$h,$t:50%,$l:50%){
+    position: absolute;
+    top: rpx($t);
+    left: rpx($l);
+    width: rpx($w);
+    height: rpx($h);
+    margin-left:rpx(-$w/2);
+    margin-top:rpx(-$h/2);
+}
+@mixin bg($w,$h,$img,$t:50%,$l:50%){
+    position: absolute;
+    top: rpx($t);
+    left: rpx($l);
+    width: rpx($w);
+    height: rpx($h);
+    margin-left:rpx(-$w/2);
+    margin-top:rpx(-$h/2);
+    background: url("#{$img}") no-repeat center;
+    background-size:contain;
+}

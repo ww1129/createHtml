@@ -1,0 +1,12 @@
+{
+  "name": "mycreateHtml",
+  "version": "1.0.0",
+  "description": "create html +css",
+  "author": "",
+  "private": true,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  }
+}
