@@ -29,7 +29,7 @@ CEP插件开发教程参考http://nullice.com/archives/1622
   
 ```
 
-3.CEP 扩展存放的目录  
+3.CEP 扩展存放的目录(createHtml存放目录根据系统和photoshop cc版本进行选择)   
 ```
  CC 2014, CC 2015, CC 2015.1      
  Windows 32 位	C:\Program Files\Common Files\Adobe\CEP\extensions\    
@@ -44,18 +44,18 @@ CEP插件开发教程参考http://nullice.com/archives/1622
 
 ```
    
-4.运行项目   
+4.安装目录依赖包  
  ```
  项目下运行： npm i 
  ```  
-  打开photoshop cc ,     
-  打开一张要编译的psd,对psd图层根据要生成的DOM结构进行处理      
-  弹出，编译窗口 ：文件窗口-》扩展工具-》选择 CREATE HTML     
-  点击编译     
+5.插件使用    
+  使用photoshop cc 打开一张要编译的psd,对psd图层根据要生成的DOM结构进行处理,         
+  弹出，编译窗口 ：文件窗口-》扩展工具-》选择 CREATE HTML         
+  点击编译         
   ```
-  在编译目录下会生成编译好的文件，依次运行
-  npm i    
-  gulp
+  在编译目录下会生成编译好的文件，进入项目依次运行
+  安装依赖包：     npm i    
+  编译scss,js等：  gulp
   将css文件在html中引入，运行npm start  
   ```
      
