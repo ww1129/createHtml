@@ -49,7 +49,7 @@ CEP插件开发教程参考http://nullice.com/archives/1622
  项目下运行： npm i 
  ```  
   打开photoshop cc ,     
-  打开一张要编译的psd      
+  打开一张要编译的psd,对psd图层根据要生成的DOM结构进行处理      
   弹出，编译窗口 ：文件窗口-》扩展工具-》选择 CREATE HTML     
   点击编译     
   ```
