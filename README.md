@@ -13,8 +13,8 @@ CEP 开发，需要了解以下：
 ```
 --HTML + CSS + JS 的网页开发基础概念    
 --ExtendScript 的相关概念    
---对要开发的宿主应用（如 PhotoShop）的了解    
-CEP插件开发教程参考http://nullice.com/archives/1622   
+--对要开发的宿主应用（如 PhotoShop）的了解     
+CEP插件开发教程参考: 【http://nullice.com/archives/1622 】 
 ```
 
 1.安装abobe photoshop cc版本        
@@ -29,7 +29,7 @@ CEP插件开发教程参考http://nullice.com/archives/1622
   
 ```
 
-3.CEP 扩展存放的目录(createHtml存放目录根据系统和photoshop cc版本进行选择)   
+3.CEP 扩展存放的目录(createHtml存放目录，根据系统和photoshop cc版本进行选择)   
 ```
  CC 2014, CC 2015, CC 2015.1      
  Windows 32 位	C:\Program Files\Common Files\Adobe\CEP\extensions\    
