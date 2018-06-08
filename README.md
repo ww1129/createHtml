@@ -1,4 +1,4 @@
-# createHtml    
+# createHtml(com.adobe.myCreateHtml)        
 CEP插件，用于快速将psd输出为html+css+img    
 
 CEP 概述： 
